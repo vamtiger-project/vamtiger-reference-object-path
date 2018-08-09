@@ -1,10 +1,10 @@
 /// <reference path="../node_modules/vamtiger-regex-period/build/index.d.ts" />
 declare module "index" {
-    const _default: ({ object, objectPath }: Params) => any;
+    const _default: ({ object, path: objectPath }: Params) => any;
     export default _default;
     export interface Params {
         object: IObject;
-        objectPath: string;
+        path: string;
     }
     export interface IObject {
         [key: string]: any;
