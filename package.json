@@ -1,0 +1,50 @@
+{
+    "name": "vamtiger-reference-object-path",
+    "version": "0.0.1",
+    "description": "Get a reference for defined object and path.",
+    "main": "build",
+    "scripts": {
+        "test": "npm run test-bundle && mocha build/test --recursive",
+        "clean": "rm -rf build/*",
+        "build": "npm run clean && tsc",
+        "test-build": "tsc",
+        "build-types": "npm run clean && tsc --project tsconfig-declaration.json",
+        "test-build-types": "tsc --project tsconfig-declaration.json",
+        "commit": "npm run bundle && vamtigerNodeTypescriptCommit --push --publish --buildScript bundle",
+        "bundle": "npm run test && npm run build-types && vamtiger-bundle-typescript --relativePath --entryFilePath source/index.ts --bundleFilePath build/index.js --format cjs --sourcemap true --minify --copySourceMap",
+        "test-bundle": "npm run test-build && npm run test-build-types && vamtiger-bundle-typescript --relativePath --entryFilePath source/index.ts --bundleFilePath build/index.js --format cjs --sourcemap true --minify --copySourceMap",
+        "watch": "npm run clean && npm run build-types && vamtiger-bundle-typescript --relativePath --entryFilePath source/index.ts --bundleFilePath build/index.js --format cjs --sourcemap true --minify --copySourceMap --watch",
+        "test-watch": "npm run test-build && npm run test-build-types && vamtiger-bundle-typescript --relativePath --entryFilePath source/index.ts --bundleFilePath build/index.js --format cjs --sourcemap true --minify --copySourceMap --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vamtiger-project/vamtiger-reference-object-path.git"
+    },
+    "keywords": [
+        "vamtiger",
+        "referencec",
+        "object",
+        "path"
+    ],
+    "author": "Vamtiger Immortalles",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/vamtiger-project/vamtiger-reference-object-path/issues"
+    },
+    "homepage": "https://github.com/vamtiger-project/vamtiger-reference-object-path#readme",
+    "types": "build/index.d.ts",
+    "devDependencies": {
+        "@types/chai": "^4.1.4",
+        "@types/mocha": "^5.2.5",
+        "@types/node": "^10.5.7",
+        "@types/xregexp": "^3.0.29",
+        "chai": "^4.1.2",
+        "mocha": "^5.2.0",
+        "typescript": "^3.0.1",
+        "vamtiger-bundle-typescript": "0.0.25",
+        "vamtiger-node-typescript-commit": "0.0.59"
+    },
+    "dependencies": {
+        "vamtiger-regex-period": "0.0.17"
+    }
+}
