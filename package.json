@@ -1,6 +1,6 @@
 {
     "name": "vamtiger-reference-object-path",
-    "version": "0.0.2-0",
+    "version": "0.0.2",
     "description": "Get a reference for defined object and path.",
     "main": "build",
     "scripts": {
