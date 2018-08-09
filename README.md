@@ -19,7 +19,7 @@ import referenceObjectPath from 'vamtiger-reference-object-path';
 ```
 or
 ```javascript
-const referenceObjectPath = require('vamtiger-reference-object-path').default;
+const referenceObjectPath = require('vamtiger-reference-object-path');
 ```
 
 [VAMTIGER Reference Object Path](https://github.com/vamtiger-project/vamtiger-reference-object-path) can then be used to reference a defined object path:
