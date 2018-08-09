@@ -1,3 +1,4 @@
+/// <amd-module name="vamtiger-regex-period"/>
 /// <reference path="../node_modules/vamtiger-regex-period/build/index.d.ts"/>
 import { regex } from 'vamtiger-regex-period';
 
