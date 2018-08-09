@@ -1,5 +1,5 @@
 # VAMTIGER Reference Object Path
-Get a reference for defined object path.
+Get a reference for a defined object path.
 
 ## Installation
 [VAMTIGER Reference Object Path](https://github.com/vamtiger-project/vamtiger-reference-object-path) can be installed using [npm](https://www.npmjs.com/) or [yarn]():
