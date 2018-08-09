@@ -14,7 +14,7 @@ describe('vamtiger-reference-object-path: should reference', function () {
     it('object path', function () {
         const reference = referenceObjectPath({
             object,
-            objectPath
+            path: objectPath
         });
         const expected = object.some.object.path;
 

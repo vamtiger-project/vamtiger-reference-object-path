@@ -1,7 +1,7 @@
 /// <reference path="../node_modules/vamtiger-regex-period/build/index.d.ts"/>
 import { regex } from 'vamtiger-regex-period';
 
-export default ({ object, objectPath }: Params) => {
+export default ({ object, path: objectPath }: Params) => {
     const attributes = objectPath.split(regex);
     const reference = attributes.reduce((objectReference, attribute) => objectReference[attribute], object);
 
@@ -10,7 +10,7 @@ export default ({ object, objectPath }: Params) => {
 
 export interface Params {
     object: IObject;
-    objectPath: string;
+    path: string;
 }
 
 export interface IObject {
