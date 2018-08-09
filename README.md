@@ -31,9 +31,9 @@ const object = {
         }
     }
 };
-const objectPath = 'some.object.path';
+const path = 'some.object.path';
 const reference = referenceObjectPath({
     object,
-    objectPath
+    path
 }); // 'reference to object path'
 ```
