@@ -1,6 +1,6 @@
 /// <reference path="../node_modules/vamtiger-regex-period/build/index.d.ts" />
-/// <amd-module name="vamtiger-regex-period" />
-declare module "vamtiger-regex-period" {
+/// <amd-module name="vamtiger-reference-object-path" />
+declare module "vamtiger-reference-object-path" {
     const _default: ({ object, path: objectPath }: Params) => any;
     export default _default;
     export interface Params {
