@@ -1,6 +1,7 @@
 import { expect } from 'chai';
+import { ReferenceObjectPath } from '..';
 
-const referenceObjectPath = require('..').default || require('..');
+const referenceObjectPath = (require('..').default || require('..')) as ReferenceObjectPath;
 const object = {
     some: {
         object: {
